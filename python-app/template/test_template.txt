@@ -1,0 +1,4 @@
+This is a template test.
+
+Application name is: ${{values.app_name}}
+Application environment is: ${{values.app_env}}
