@@ -41,8 +41,9 @@ spec:
       name: Publish
       action: publish:github
       input:
-        allowedHosts:
-          - github.com
+        # FIX: Scaffolder 2.0 breaking changes - https://backstage.io/docs/releases/v1.40.0/
+        # allowedHosts:
+        #   - github.com
         description: This is ${{ parameters.component_id }}
         repoUrl: github.com?owner=krsmanovic&repo=${{parameters.component_id}}
         protectDefaultBranch: false
